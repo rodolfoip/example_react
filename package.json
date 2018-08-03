@@ -1,10 +1,12 @@
 {
-  "name": "primeiro-react",
+  "name": "example_react",
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack-dev-server --mode development --open",
-    "build": "webpack --config webpack.config.js --progress --mode development"
+    "build": "webpack --config webpack.dev.js --progress --mode development",
+    "production": "webpack --config webpack.production.js --progress --hide-modules --mode production ",
+    "watch": "webpack --config webpack.dev.js --watch --progress --mode development",
+    "server": "webpack-dev-server --config webpack.dev.js --open --mode development"
   },
   "author": "",
   "license": "ISC",
